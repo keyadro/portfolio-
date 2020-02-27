@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans",Helvetica,Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+h1, h2, h3{
+    font-family:"Roboto",Helvetica,Arial, sans-serif;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: #00b8e4;
+    text-decoration: underline;
+}
+
+header{
+    background-image: url(img/fundo4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 
+    
+}
+header p{
+    margin-bottom: 2em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: black;
+    color: white;
+
+    
+}
+
+
+#sobre p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    max-width: 1000px;
+}
+
+.botao{
+    color: white;
+    text-decoration: none;
+    background-color: #00b8e4;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: .9em;
+    
+}
+#servicos{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+#portifolio{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+#portifolio h2{
+    margin-bottom: 20px;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#contato p{
+    padding: 10px;
+}
+.rede-social a{
+    padding-left: 20px;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px){
+    nav{
+        flex-direction:  row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+        padding: 20px;
+        
+    }
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    header p{
+        padding-top: 10px;
+    }
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+        
+    }
+    
+    
+    #servicos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+    #servicos h2{
+        text-align: center;
+        width: 100%;
+    }
+    #servicos div{
+        flex-grow: 1;
+        flex-basis:  150px;
+        padding: 0 10px;
+        
+    }
+    #portifolio{
+        flex-direction:row;
+        flex-wrap: wrap;
+
+     
+    }
+    #portifolio h2{
+        width: 100%;
+        text-align: center;
+    }
+    #portifolio img{
+        height: 200px;
+        margin: auto 15px;
+    
+    }
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+        
+        
+    }
+    #contato h2,#contato p{
+        width: 100%;
+    }
+    footer{
+        padding: 50px;
+    }
+    
+}
