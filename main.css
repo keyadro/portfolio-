@@ -29,6 +29,7 @@ nav > a{
     
 }
 
+
 nav ul{
     list-style: none;
     display: flex;
@@ -48,7 +49,10 @@ nav ul li a{
     width: 100%;
     text-decoration: none;
     color: white;
+    font-family: Pacifico,serif;
+    font-weight: bolder;
 }
+
 nav ul li a:hover{
     color: #00b8e4;
     text-decoration: underline;
@@ -60,13 +64,22 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    font-weight: bold;
+     
+    
+}
+
+header div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 20px 
-    
+    text-align: center; 
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #0006;
 }
+
 header p{
     margin-bottom: 2em;
 }
